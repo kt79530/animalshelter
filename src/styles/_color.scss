@@ -1,0 +1,93 @@
+//Primary___________________________________
+
+.primary{color:#3A7F78; border-color:#3A7F78;}
+.primary-bg{color:#fff; background-color:#3A7F78;}
+.primary-btn{
+    color:#3A7F78;
+    border-color:#3A7F78;
+    &:hover{color:#fff; background-color:#3A7F78;}
+}
+
+.primary-light{color:#EAF5F4; border-color:#EAF5F4;}
+.primary-light-bg{background-color:#EAF5F4;}
+.primary-light-btn{
+    color:#EAF5F4;
+    border-color:#EAF5F4;
+    &:hover{color:#fff; background-color:#EAF5F4;}
+}
+
+.primary-dark{color:#285C57; border-color:#285C57;}
+.primary-dark-bg{color:#fff; background-color:#285c57;}
+.primary-dark-btn{
+    color:#285C57;
+    border-color:#285C57;
+    &:hover{color:#fff; background-color:#285C57;}
+}
+
+
+//Secondary________________________________
+.secondary{color:#F8B661; border-color:#F8B661;}
+.secondary-bg{color:#fff; background-color:#F8B661;}
+.secondary-btn{
+    color:#F8B661;
+    border-color:#F8B661;
+    &:hover{color:#fff; background-color:#F8B661;}
+}
+
+.secondary-light{color:#FDE8C7; border-color:#FDE8C7;}
+.secondary-light-bg{background-color:#FDE8C7;}
+.secondary-light-btn{
+    color:#FDE8C7;
+    border-color:#FDE8C7;
+    &:hover{color:#fff; background-color:#FDE8C7;}
+}
+
+.secondary-dark{color:#D2914E; border-color:#D2914E;}
+.secondary-dark-bg{color:#fff; background-color:#D2914E;}
+.secondary-dark-btn{
+    color:#D2914E;
+    border-color:#D2914E;
+    &:hover{color:#fff; background-color:#D2914E;}
+}
+
+
+//Blend___________________________________
+.blend{color:#375829; border-color:#375829;}
+.blend-bg{color:#fff; background-color:#375829;}
+.blend-btn{
+    color:#375829;
+    border-color:#375829;
+    &:hover{color:#fff; background-color:#375829;}
+}
+
+.blend-light{color:#B1D6AE; border-color:#B1D6AE;}
+.blend-light-bg{background-color:#B1D6AE;}
+.blend-light-btn{
+    color:#B1D6AE;
+    border-color:#B1D6AE;
+    &:hover{color:#fff; background-color:#B1D6AE;}
+}
+
+.blend-dark{color:#2B4A30; border-color:#2B4A30;}
+.blend-dark-bg{color:#fff; background-color:#2B4A30;}
+.blend-dark-btn{
+    color:#2B4A30;
+    border-color:#2B4A30;
+    &:hover{color:#fff; background-color:#2B4A30;}
+}
+
+
+//강조용___________________________________
+.danger{color:#D95040; border-color:#D95040}
+.danger-bg{color:#fff; background-color:#D95040}
+.danger-btn{
+    color:#D95040;
+    border-color:#D95040;
+    &:hover{color:#fff; background-color:#D95040;}
+}
+
+//etc_____________________________________
+.bg-color{background-color:#FAF9F6;}
+.text-light{color:#BDBDBD; border-color:#BDBDBD}
+.text-dark{color:#707070; border-color:#707070}
+.divider, .dropdown-divider, hr{border-color:#DADADA;}

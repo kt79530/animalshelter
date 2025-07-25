@@ -59,7 +59,7 @@ const Header = () => {
       </Container>
     </Navbar>
 
-    <div className='display-1'>123456789</div>
+    <div className='display-1'></div>
     </>
   )
 };

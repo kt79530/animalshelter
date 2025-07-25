@@ -1,3 +1,6 @@
+//header 와 body 구분선
+.line{width: 43.5vw; border: 1px dotted #DADADA; margin: 0 auto;}
+
 //이미지 개별 설정
 .img{
     max-width: 412px;
@@ -16,11 +19,18 @@
     margin-left: 30px;
 }
 
-//modal 너비 변경
-.modal-style{ 
+/*modal 스타일 변경*/
+
+//모달 전체 너비 변경
+.modal-style{  
    max-width: 950px; 
    width: 90%;
 }
+
+//모달 섹션 구분선 설정
+.modal-header{border-bottom: none}
+.modal-footer{border-top: none;}
+
 
 //해시태그 설정
 .tag{ 
@@ -39,7 +49,7 @@
     line-height: 28px;
 }
 
-//수정 버튼 설정
+//상단 수정 버튼 설정
 .btn-radius{
     width: 63px;
     height: 33px;
@@ -48,6 +58,14 @@
     right: 10px;
 
 }
+
+//sns 댓글 설정
+.sns-img{position: absolute; left: 2.2vw;}
+.sns-name{position: absolute; left: 4.5vw;}
+.star-img{width: 30px; height: 20px; border: 1px solid; margin-right: 1.5vw;}
+.heart-img{width: 30px; height: 20px; border: 1px solid; margin-right: 1.5vw;}
+.share-img{width: 30px; height: 20px; border: 1px solid;}
+.icons-box{display: flex; margin-right: 3vw;}
 
 
 

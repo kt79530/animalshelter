@@ -6,15 +6,18 @@
 }*/
 
 //header 와 body 구분선
-.organization-info{
+.line{width: 95%; border: 0.75px dotted #DADADA; margin: 0 auto;}
+
+/*.search-header{
  display: flex; 
  flex-wrap: wrap;
- width: 830px; height: auto; 
+ width: 830px !important; 
+ height: auto; 
  margin: 0 auto;
-}
+}*/
 
 
-.line{width: 95%; border: 0.75px dotted #DADADA; margin: 0 auto;}
+
 .img-fluid{
   width: 350px;
   height: auto;
@@ -49,7 +52,7 @@
   text-align: center;
   line-height: 37px;
   color: white;
-  margin-left: 2vw;
+  margin-left: 1.5vw;
 }
 .detail-wrap{display: flex;}
 

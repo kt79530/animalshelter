@@ -2,21 +2,86 @@ import React, { useState } from 'react';
 import Community from './Community';
 import Post from './Post';
 import Search from './Search';
+import { searchList, SearchDataType } from '../data/searchData'; // searchList: SearchDataType[]
+import { postList, PostDataType } from '../data/postData';
 
-const ModalTestWrapper = () => {
-  const [showCommunityModal, setShowCommunityModal] = useState(false);
-  const [showPostModal, setShowPostModal] = useState(false);
-  const [showSearchModal, setShowSearchModal] = useState(false);
+const ModalTestComp = () => {
+//커뮤니티,포스트 모달창 관련 변수 지정
+  type ModalType = 'community' | 'post' | 'search' | null;
+  const [activeModal, setActiveModal] = useState<ModalType>(null);
+  const openModal = (modal: ModalType) => setActiveModal(modal);
+  const closeModal = () => setActiveModal(null);
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedName, setSelectedName] = useState<string | null>(null);
+  
+  
+
+  // 사용자가 목록에서 항목을 클릭했을 때 실행
+  const handleOpen = (name: string) => {
+    setSelectedName(name);
+    setModalOpen(true);
+  };
+
+  const handleClose = () => {
+    setModalOpen(false);
+    setSelectedName(null);
+  };
+
+  // 선택된 이름에 해당하는 데이터 찾기
+  const selectedSearchData = searchList.find((item:SearchDataType) => item.name === selectedName);
+  const selectedPostData = postList.find((item:PostDataType) => item.organizationName === selectedName);
+
   return (
     <>
-      <button onClick={() => setShowCommunityModal(true)}>모달 community 열기</button>
-      <Community show={showCommunityModal} onClose={() => setShowCommunityModal(false)} />
-      <button onClick={() => setShowPostModal(true)}>모달 Post 열기</button>
-      <Post show={showPostModal} onClose={() => setShowPostModal(false)} />
-      <button onClick={() => setShowSearchModal(true)}>모달 search 열기</button>
-      <Search show={showSearchModal} onClose={() => setShowSearchModal(false)} />
+      {/*커뮤티니,포스트 모달창 확인 버튼*/ }
+      <button onClick={() => openModal('community')}>모달 Community 열기</button>
+      <button onClick={() => openModal('post')}>모달 Post 열기</button>
+      <Community show={activeModal === 'community'} onClose={closeModal} />
+      <Post show={activeModal === 'post'} onClose={closeModal} data={postList[0]} />
+      
+      {/*실종동물 게시판 리스트 예시 */}
+      {searchList.map(item => (
+        <div key={item.name} onClick={() => handleOpen(item.name)}>
+          <h4>{item.title}</h4>
+          <p>{item.date}</p>
+        </div>
+      ))}
+
+      {/* 모달 띄우기 */}
+      {selectedSearchData && (
+        <Search
+          show={modalOpen}
+          onClose={handleClose}
+          data={selectedSearchData}
+        />
+      )}
     </>
   );
 };
 
-export default ModalTestWrapper;
+export default ModalTestComp;
+
+
+/*type ModalType = 'community' | 'post' | 'search' | null;
+
+const ModalTestWrapper = () => {
+  const [activeModal, setActiveModal] = useState<ModalType>(null);
+
+  const openModal = (modal: ModalType) => setActiveModal(modal);
+  const closeModal = () => setActiveModal(null);
+
+  return (
+    <>
+      <button onClick={() => openModal('community')}>모달 Community 열기</button>
+      <button onClick={() => openModal('post')}>모달 Post 열기</button>
+      <button onClick={() => openModal('search')}>모달 Search 열기</button>
+
+      <Community show={activeModal === 'community'} onClose={closeModal} />
+      <Post show={activeModal === 'post'} onClose={closeModal} />
+      <Search show={activeModal === 'search'} onClose={closeModal} />
+    </>
+  );
+};
+
+export default ModalTestWrapper;*/

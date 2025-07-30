@@ -1,5 +1,5 @@
 
-//modal 너비 변경
+//modal 전체 너비 조정
 .modal-style{ 
    max-width: 950px; 
    width: 90%;
@@ -13,7 +13,8 @@
  margin: 0 auto;
 }
 
-
+//modal.header 와 body사이 line
+.line{width: 92%; border: 1px dotted #DADADA; margin: 0 auto;}
 
 
 

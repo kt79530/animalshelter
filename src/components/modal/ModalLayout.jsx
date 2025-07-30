@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import '../styles/_modalLayout.scss';
+import '../../styles/_modalLayout.scss';
 
 interface ModalLayoutProps {
   show: boolean;

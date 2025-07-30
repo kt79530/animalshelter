@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import Nav from './layout/Nav';
-import ModalTestComp from '../src/components/ModalTestComp';
-import Post from './components/Post';
+import ModalTestComp from '../src/components/modal/ModalTestComp';
+
+import Gallery from './pages/Gallery';
 
 
 function App() {
@@ -12,10 +12,11 @@ function App() {
   return (
     <>
     <Header/>
-    <ModalTestComp/>
-    
-    <Footer/>
+    {/*<ModalTestComp/>*/}
+    <Gallery/>
+   {/* <Footer/>*/}
     </>
+    
   );
 }
 

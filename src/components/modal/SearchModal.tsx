@@ -2,9 +2,9 @@ import React, { useState }from 'react';
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 import ModalLayout from './ModalLayout';
 
-import '../styles/_search.scss';
-import Comment from './Comment';
-import { SearchDataType } from '../data/searchData';
+import '../../styles/_search.scss';
+import Comment from '../Comment';
+import { SearchDataType } from '../../data/searchData';
 
 //알림 모달창
 //import AlertModal from '../utils/AlertModal';
@@ -15,8 +15,8 @@ import { SearchDataType } from '../data/searchData';
 
 
 //댓글 이미지 렌더링
-import sns from '../assets/img/community/sns-profile.png';
-import sns2 from '../assets/img/commentsection/snsface.png';
+import sns from '../../assets/img/community/sns-profile.png';
+import sns2 from '../../assets/img/commentsection/snsface.png';
 
 
 

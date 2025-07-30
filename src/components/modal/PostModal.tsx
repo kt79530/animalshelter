@@ -3,11 +3,11 @@ import { Button } from 'react-bootstrap';
 import ModalLayout from './ModalLayout'; // 공통 모달
 //import { MdStarOutline, MdChatBubbleOutline, MdOutlineShare } from 'react-icons/md';
 //import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
-import volunteer from '../assets/img/post/volunteer.jpg';
-import sns from '../assets/img/community/sns-profile.png';
+import volunteer from '../../assets/img/post/volunteer.jpg';
+import sns from '../../assets/img/community/sns-profile.png';
 
 //data 불러오기
-import postData, { PostDataType } from '../data/postData';
+import postData, { PostDataType } from '../../data/postData';
 
 interface PostProps {
   show: boolean;
@@ -92,7 +92,7 @@ const Post: React.FC<PostProps> = ({ show, onClose, data }) => {
       </Button>
     </div>
   </ModalLayout>
-);
+  );
 };
 
 export default Post;

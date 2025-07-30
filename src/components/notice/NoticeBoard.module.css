@@ -1,0 +1,16 @@
+.content th {
+  font-weight: 400;
+}
+.content .newTag {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.content .icon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid blue;
+}
+.content .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=NoticeBoard.module.css.map */

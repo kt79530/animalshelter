@@ -27,7 +27,7 @@ const Header = () => {
               <NavDropdown
                 id="absicLabel"
                 title="동물을 찾습니다">
-                <NavDropdown.Item href="#">실종동물 찾습니다</NavDropdown.Item>
+                <NavDropdown.Item href="/pages/Gallery">실종동물 찾습니다</NavDropdown.Item>
                 <NavDropdown.Item href="#">주인을 찾습니다</NavDropdown.Item>
                 <NavDropdown.Item href="#">상봉 완료?!</NavDropdown.Item>
               </NavDropdown>

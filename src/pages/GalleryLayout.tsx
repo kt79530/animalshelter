@@ -1,41 +1,40 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import '../styles/_galleryLayout.scss';
+import { Container, Row, Col} from "react-bootstrap";
+import Search from "../components/search/Search";
+import styles from '../styles/_galleryLayout.module.scss';
 
 interface GalleryLayoutProps{
     children: React.ReactNode; //렌더링 될 실제 페이지 콘텐츠
     pageTitle? : string; //페이지별 제목등의 props
     pageBgImg? : string; //페이지별 헤드 이미지
     pageSubText?: string;
-    wrapperClassName? : string; //추가적으로 필요한 공통 속성들
 }
 
-const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle, wrapperClassName,pageBgImg, pageSubText}) =>{
+const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle,pageBgImg, pageSubText}) =>{
     
         const bgImg = pageBgImg 
     return (
-        <div className={`page-wrapper ${wrapperClassName || ''}`}>
-                   <Container>
+        <div className={`${styles.wrapper}`}>
+            <div className={styles.header} style={{ backgroundImage: `url(${bgImg})`}} >
+                <Container>
+                    <Col lg={12}>
+                        <div className={styles.headtext}>
+                            <h1>{pageTitle}</h1>
+                            <h3>{pageSubText}</h3>
+                        </div>
+                    </Col>
+                </Container>                    
+            </div>
+                <Container className={styles.body}>
                     <Row>
-                        <Col lg={12}>
-                        <div className="page-header-bg" 
-                            style={{ backgroundImage: `url(${bgImg})`}} >
-                            <div className="textbox">
-                                <h1>{pageTitle}</h1>
-                                <h3>{pageSubText}</h3>
-                            </div>
-                        </div>    
-                        </Col>
-                    
-                        <Col lg={12} className="body">
-                            {/* 검색창 자리 */}
-                            {children} {/* 여기가 각 컴포넌트 A와 B의 고유한 콘텐츠가 렌더링될 공간입니다 */}
-                    
+                        <Col lg={4} md={6} className="searchbar mt-5">
+                            <Search />
                         </Col>
                     </Row>
-                    
+                    <Row >
+                        {children} {/* 여기가 각 컴포넌트의 고유한 콘텐츠가 렌더링될 공간입니다 */}
+                    </Row>
                 </Container>
-   
         </div>
     );
 };

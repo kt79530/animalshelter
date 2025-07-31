@@ -74,10 +74,10 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
               <span className="recruit secondary-bg tab ms-2">발견</span>
             </div>
             <div className="info-item ">
-              <h6>{data.info}</h6>
+              <h6>{data.gender} | {data.age}</h6>
             </div>
             <div className="info-item mt-3 mb-2">품종<span className='info-item-color'> {data.breed}</span></div>
-            <div className="info-item mb-2">분실 장소<span className='info-item-color'> {data.lostLocation}</span></div>
+            <div className="info-item mb-2">분실 장소<span className='info-item-color'> {data.location}</span></div>
             <div className="info-item mb-2">분실 날짜<span className='info-item-color'> {data.lostPeriod}</span> </div>
             <div className="info-item mb-2">긴급 연락처<span className='info-item-color'> {data.facilityContact}</span> </div>
           </div>
@@ -87,8 +87,8 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
         <div className='detail-wrap'>
           <div className='detail-btn'>특이사항</div>
             <div className="detail-content ">
-              <p className="content-title ms-1">해당 동물에 대한 설명을 간략하게 작성합니다.</p>
-              <p className="content-text ms-1" style={{ whiteSpace: 'pre-line' }}>{data.content}</p>
+              <p className="content-title ms-1" style={{ whiteSpace: 'pre-line' }}>{data.content}</p>
+              <p className="content-text ms-1" style={{ whiteSpace: 'pre-line' }}>{data.specialNotes}</p>
             </div>
         </div>
         <div className='finderFee-wrap mb-5'>

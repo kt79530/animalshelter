@@ -11,10 +11,14 @@ function App() {
   const [showPost, setShowPost] = useState(true);
   return (
     <>
-    <Header/>
-    {/*<ModalTestComp/>*/}
-    <Gallery/>
-   {/* <Footer/>*/}
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Header/>
+      <main style={{flexGrow:1}}>
+        {/*<ModalTestComp/>*/}
+        <Gallery/>
+      </main>
+      <Footer/>
+    </div>
     </>
     
   );

@@ -5,7 +5,7 @@ import '../styles/_Footer.scss';
 const Footer = () => {
     return(
        
-        <footer className='wrapper'>
+        <footer className='wrapper mt-5'>
             <pre className='margin body-small'>
                 <p><strong>개인정보 취급방침</strong>     |     개인정보 책임관리자: 정민수</p>
                 <span>(주)상상유니버스 | 대표자: 정민수 | 서울특별시 마포구 독막로28길 10</span><br/>

@@ -6,12 +6,14 @@ export interface SearchDataType{
     date:string;
     image:string;
     name:string;
-    info:string;
+    gender:string;
+    age:string;
     breed:string;
-    lostLocation:string;
+    location:string;
     lostPeriod:string;
     facilityContact:string;
     content:string;
+    specialNotes:string;
     finderFee:string;
     authorName:string;
     likes:number;
@@ -25,12 +27,14 @@ export const searchList: SearchDataType[] = [
     date: '2025-07-19',
     image:mango,
     name : '망고',
-    info:'3세 수컷 10kg',
-    breed:'강아지 (푸들)',
-    lostLocation:'강원도 가평군',
+    gender:'수컷',
+    age:'3살',
+    breed:'강아지 (골든리트리버)',
+    location:'강원도 가평군',
     lostPeriod:'2025-07-19',
     facilityContact:'010-1234-2918',
-    content: `특이사항 및 기타 숙지 사항을 작성하면 됩니다.`,
+    content: '대문을 잠깐 열어 둔 사이에 나가 버렸어요ㅜㅜ',
+    specialNotes:'다리를 살짝 절룩입니다',
     finderFee: '100만원',
     authorName:'Wade Warren',
     likes: 12,
@@ -42,12 +46,14 @@ export const searchList: SearchDataType[] = [
     date: '2025-07-25',
     image:mink,
     name : '밍크',
-    info:'5세 암컷 8kg',
-    breed:'고양이 (러시안)',
-    lostLocation:'서울 강남구 수서동',
+    gender:'암컷',
+    age: '2살',
+    breed:'고양이 (러시안 블루)',
+    location:'서울 강남구 수서동',
     lostPeriod:'2025-07-24',
     facilityContact:'010-4567-1234',
-    content: `빨간 목걸이 착용`,
+    content: '제발 도와주세요. 빨간 목걸이에 연락처 있어요',
+    specialNotes: `빨간 목걸이 착용`,
     finderFee: '500만원',
     authorName:'Wade Warren',
     likes: 12,

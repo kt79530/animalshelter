@@ -23,7 +23,7 @@ const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle,pageB
                             <h3>{pageSubText}</h3>
                         </div>
                     </Col>
-                </Container>                    
+                </Container>                       
             </div>
                 <Container className={styles.body}>
                     <Row>

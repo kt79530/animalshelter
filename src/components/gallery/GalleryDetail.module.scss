@@ -9,9 +9,12 @@
 
     .cardImg{
         width:100%;
+        height: 100%;
         aspect-ratio:1/1;
         overflow:hidden;
-        box-sizing:border-box;
+        box-sizing: border-box;
+
+        .imagefit{height: 100%; object-fit: cover;}
     }
 
     .hashtag{

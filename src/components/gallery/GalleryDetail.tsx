@@ -15,9 +15,11 @@ const GalleryDetail = ({image, title, location, gender, age, breed} : GalleryDet
     return(
         <>
         <Card className={`col-sm-3 col-6 ${styles.warp}`}>
+            
             <div className={`${styles.cardImg}`}>
-                <Card.Img variant="top" src={image} />
+                <Card.Img variant="top" src={image} className={styles.imagefit} />
             </div>
+            
             <Card.Body className="d-flex flex-column align-items-start justify-content-between">
                 <Card.Subtitle className={`tab primary ${styles.hashtag}`}>{location}</Card.Subtitle>
                     <Card.Title className={`body-large mt-2 mb-0 w-100 ${styles.title}`}>{title}</Card.Title>

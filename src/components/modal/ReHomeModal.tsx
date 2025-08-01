@@ -3,19 +3,23 @@ import { Button } from 'react-bootstrap';
 import ModalLayout from './ModalLayout'; // 공통 모달
 //import { MdStarOutline, MdChatBubbleOutline, MdOutlineShare } from 'react-icons/md';
 //import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
-import volunteer from '../../assets/img/post/volunteer.jpg';
+import '../../styles/_reHome.scss'
+
 import sns from '../../assets/img/community/sns-profile.png';
 
 //data 불러오기
-import postData, { PostDataType } from '../../data/postData';
+import { ReHomeDataType } from '../../data/reHomeData';
 
-interface PostProps {
+//댓글 입력창 불러오기
+//import Comment from '../Comment';
+
+interface ReHomeProps {
   show: boolean;
   onClose: () => void;
-  data: PostDataType;
+  data: ReHomeDataType;
 }
 
-const Post: React.FC<PostProps> = ({ show, onClose, data }) => {
+const Post: React.FC<ReHomeProps> = ({ show, onClose, data }) => {
   
   return (
   <ModalLayout
@@ -42,26 +46,26 @@ const Post: React.FC<PostProps> = ({ show, onClose, data }) => {
       
       <div className="info-box">
         <div className="info-title">
-          <h4>{data.organizationName}</h4>
-          <span className="recruit secondary-bg tab ms-2">모집중</span>
+          <h4>{data.name}</h4>
+          <span className="recruit secondary-bg tab ms-2">입양완료</span>
         </div>
-        <div className="info-item-url">
-          <a href={data.organizationUrl} target="_blank" rel="noopener noreferrer">
-            {data.organizationUrl}
-          </a>
+        <div className="info-item">
+          <h6>{data.gender} | {data.age} | {data.weight}kg</h6>
         </div>
-        <div className="text-light mt-3 mb-2">담당자<span className='primary-dark'> {data.contactPerson}</span></div>
-        <div className="text-light mb-2">활동 장소<span className='primary-dark'> {data.activityLocation}</span></div>
-        <div className="text-light mb-2">모집 기간<span className='primary-dark'> {data.recruitmentPeriod}</span></div>
-        <div className="text-light mb-2">봉사 기간<span className='primary-dark'> {data.volunteerPeriod}</span></div>
-        <div className="text-light mb-2">시설 연락처<span className='primary-dark'> {data.facilityContact}</span></div>
+        <div className="text-light mt-3 mb-2">분양 동물
+            <span className='primary-dark'> {data.breed}</span></div>
+        <div className="text-light mb-2">분양 지역
+            <span className='primary-dark'> {data.location}</span></div>
+        <div className="text-light mb-2">책임비
+            <span className='primary-dark'> {data.fee}만원</span></div>
+        <div className="text-light mb-2">연락처
+            <span className='primary-dark'> {data.facilityContact}</span></div>
       </div>
     </div>
 
     <div className="detail-wrap">
-      <div className="detail-btn">상세</div>
+      <div className="detail-btn">기타 정보</div>
       <div className="detail-content mb-4">
-        <h5 className="content-title">봉사 내용과 관련된 상세 설명이 추가됩니다.</h5>
         <p className="content-text" style={{ whiteSpace: 'pre-line' }}>{data.content}</p>
       </div>
     </div>
@@ -77,13 +81,20 @@ const Post: React.FC<PostProps> = ({ show, onClose, data }) => {
         <div className="icon-group me-4"><span>{data.shares}</span></div>
       </div>
     </div>
+    {/*<Comment /> <-댓글 입력*/}
 
     <div className="line mb-5"></div>
 
-    <div className="warning-notes mb-4 ms-4 me-3">
-      {data.warnings.map((warning: string, index: number) => (
+    <div className="warning-notes-wrap mb-5 ">
+      <h6 style={{textAlign:'center'}}>아래 사항을 준수하고 반려동물을 안전하게 입양해요!</h6>
+        <p className='tab'>1.무료 분양 계약서를 작성하세요.</p>
+        <p className='tab'>2.거래자의 신분을 반드시 공유하여 기억하거나 신분증 사본을 받으세요.</p>
+        <p className='tab'>3.책임비가 5만 원을 초과하는 경우, 사이트 이용이 정지되며 게시글이 삭제됩니다.</p>
+        <p className='tab'>4.5만 원 초과의 분양을 요구하는 게시글을 발견하면 꼭 신고해 주세요.</p>
+        <p className='tab'>5.해당 글의 모든 정보(글, 이미지)의 무단전재 및 재배포를 금지합니다.</p>
+      {/*{data.warnings.map((warning: string, index: number) => (
         <p key={index} className="warning-text mb-1">※ {warning}</p>
-      ))}
+      ))}*/}
     </div>
 
     <div className="report-button-wrapper text-center mb-4">

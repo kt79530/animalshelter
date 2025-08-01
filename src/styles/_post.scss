@@ -5,15 +5,6 @@
    width: 90%;
 }*/
 
-//header 와 body 구분선
-.organization-info{
- display: flex; 
- flex-wrap: wrap;
- width: 830px; height: auto; 
- margin: 0 auto;
-}
-
-
 //.line{width: 95%; border: 0.75px dotted #DADADA; margin: 0 auto;}
 .img-fluid{
   width: 350px;
@@ -35,11 +26,6 @@
   align-items: center; 
   justify-content: center;
   
-}
-.info-item{color:#707070 ;}
-
-.info-item-color{ 
-  color: #2E3A3A;
 }
 
 .detail-btn{

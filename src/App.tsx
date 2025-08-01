@@ -2,9 +2,13 @@ import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import ModalTestComp from '../src/components/modal/ModalTestComp';
 
+//TEST
+import ReHome from '../src/pages/ReHome';
+/* 
+import ModalTestComp from '../src/components/modal/ModalTestComp';
 import Gallery from './pages/Gallery';
+*/
 
 
 function App() {
@@ -15,7 +19,7 @@ function App() {
       <Header/>
       <main style={{flexGrow:1}}>
         {/*<ModalTestComp/>*/}
-        <Gallery/>
+        <ReHome/>
       </main>
       <Footer/>
     </div>

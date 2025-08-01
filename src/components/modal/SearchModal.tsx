@@ -44,13 +44,9 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
           </>
     }//footer*/ 
 
-    /*수정 전 코딩
-    centered 
-    scrollable
-    dialogClassName="modal-style"*/
     >{/*ModalLayout*/}
+    
       {/*<Modal.Header >*/}
-
       <div className='search-header'>
         <div className='ms-4 mt-3'>
           <Modal.Title ><h2>{data.title}</h2></Modal.Title>
@@ -62,24 +58,24 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
       <div className='line'></div>
 
       <div className="post-modal-body px-4 pt-4 pb-0">
-        {/* 기관 정보 섹션 */}
+        {/* 정보 섹션 */}
         <div className="info-wrap mb-4">
           <div className="main-image-wrapper mb-3">
-            <img src={data.image} alt="실종동물 이미지" className="img-fluid rounded" />
+            <img src={data.image} alt="실종동물 이미지" className="img-fluid rounded-4" />
           </div>
           
           <div className="info-box">
             <div className="info-title">
               <h4>{data.name}</h4>
-              <span className="recruit secondary-bg tab ms-2">발견</span>
+              <span className="recruit secondary-bg tab ms-2">종료</span>
             </div>
             <div className="info-item ">
-              <h6>{data.gender} | {data.age}</h6>
+              <h6>{data.gender} | {data.age} | {data.weight}kg</h6>
             </div>
-            <div className="info-item mt-3 mb-2">품종<span className='info-item-color'> {data.breed}</span></div>
-            <div className="info-item mb-2">분실 장소<span className='info-item-color'> {data.location}</span></div>
-            <div className="info-item mb-2">분실 날짜<span className='info-item-color'> {data.lostPeriod}</span> </div>
-            <div className="info-item mb-2">긴급 연락처<span className='info-item-color'> {data.facilityContact}</span> </div>
+            <div className="text-light mt-3 mb-2">품종<span className='primary-dark'> {data.breed}</span></div>
+            <div className="text-light mb-2">분실 장소<span className='primary-dark'> {data.location}</span></div>
+            <div className="text-light mb-2">분실 날짜<span className='primary-dark'> {data.lostPeriod}</span> </div>
+            <div className="text-light mb-2">긴급 연락처<span className='primary-dark'> {data.facilityContact}</span> </div>
           </div>
         </div>
 

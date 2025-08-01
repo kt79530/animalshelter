@@ -3,6 +3,7 @@
 .modal-style{ 
    max-width: 950px; 
    width: 90%;
+
 }
 
 //info section 
@@ -16,14 +17,12 @@
 //modal.header 와 body사이 line
 .line{width: 92%; border: 1px dotted #DADADA; margin: 0 auto;}
 
+.modal-header, .modal-footer{border: none;}
 
 
 
 
 
 
-/* src/styles/_PostModal.scss */
-
-// Bootstrap 변수를 오버라이드하거나 직접 사용
 
 

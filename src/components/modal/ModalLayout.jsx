@@ -2,6 +2,8 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import '../../styles/_modalLayout.scss';
 
+
+
 interface ModalLayoutProps {
   show: boolean;
   onClose: () => void;
@@ -13,6 +15,7 @@ interface ModalLayoutProps {
 
 const ModalLayout: React.FC<ModalLayoutProps> = ({ show, onClose, title, date, children, footer }) => {
   return (
+
     <Modal show={show} onHide={onClose} centered scrollable dialogClassName="modal-style">
       {title && (
         <Modal.Header>
@@ -26,8 +29,9 @@ const ModalLayout: React.FC<ModalLayoutProps> = ({ show, onClose, title, date, c
       <div className="line"></div>
 
       <Modal.Body className="post-modal-body px-4 pt-4 pb-0">
-        {children}
+        {children} {/*각각 모달창 컴포넌트 렌더링*/}
       </Modal.Body>
+ 
 
       <div className="line mt-4"></div>
 
@@ -37,6 +41,7 @@ const ModalLayout: React.FC<ModalLayoutProps> = ({ show, onClose, title, date, c
         </Modal.Footer>
       )}
     </Modal>
+        
   );
 };
 

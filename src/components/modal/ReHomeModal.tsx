@@ -87,11 +87,13 @@ const Post: React.FC<ReHomeProps> = ({ show, onClose, data }) => {
 
     <div className="warning-notes-wrap mb-5 ">
       <h6 style={{textAlign:'center'}}>아래 사항을 준수하고 반려동물을 안전하게 입양해요!</h6>
-        <p className='tab'>1.무료 분양 계약서를 작성하세요.</p>
-        <p className='tab'>2.거래자의 신분을 반드시 공유하여 기억하거나 신분증 사본을 받으세요.</p>
-        <p className='tab'>3.책임비가 5만 원을 초과하는 경우, 사이트 이용이 정지되며 게시글이 삭제됩니다.</p>
-        <p className='tab'>4.5만 원 초과의 분양을 요구하는 게시글을 발견하면 꼭 신고해 주세요.</p>
-        <p className='tab'>5.해당 글의 모든 정보(글, 이미지)의 무단전재 및 재배포를 금지합니다.</p>
+        <div className='warning-notes-box'>
+          <p className='tab'>1.무료 분양 계약서를 작성하세요.</p>
+          <p className='tab'>2.거래자의 신분을 반드시 공유하여 기억하거나 신분증 사본을 받으세요.</p>
+          <p className='tab'>3.책임비가 5만 원을 초과하는 경우, 사이트 이용이 정지되며 게시글이 삭제됩니다.</p>
+          <p className='tab'>4.5만 원 초과의 분양을 요구하는 게시글을 발견하면 꼭 신고해 주세요.</p>
+          <p className='tab'>5.해당 글의 모든 정보(글, 이미지)의 무단전재 및 재배포를 금지합니다.</p>
+        </div>
       {/*{data.warnings.map((warning: string, index: number) => (
         <p key={index} className="warning-text mb-1">※ {warning}</p>
       ))}*/}

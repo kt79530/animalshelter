@@ -9,6 +9,8 @@ import sns from '../../assets/img/community/sns-profile.png';
 //data 불러오기
 import postData, { PostDataType } from '../../data/postData';
 
+import '../../styles/_postModal.scss';
+
 interface PostProps {
   show: boolean;
   onClose: () => void;
@@ -50,14 +52,30 @@ const Post: React.FC<PostProps> = ({ show, onClose, data }) => {
             {data.organizationUrl}
           </a>
         </div>
-        <div className="text-light mt-3 mb-2">담당자<span className='primary-dark'> {data.contactPerson}</span></div>
-        <div className="text-light mb-2">활동 장소<span className='primary-dark'> {data.activityLocation}</span></div>
-        <div className="text-light mb-2">모집 기간<span className='primary-dark'> {data.recruitmentPeriod}</span></div>
-        <div className="text-light mb-2">봉사 기간<span className='primary-dark'> {data.volunteerPeriod}</span></div>
-        <div className="text-light mb-2">시설 연락처<span className='primary-dark'> {data.facilityContact}</span></div>
-      </div>
-    </div>
 
+          <div className='info-row mt-4 mb-2 '>
+              <span className="text-light label">담당자</span>
+              <span className='primary-dark p-ml1'>{data.contactPerson}</span>
+            </div>
+            <div className='info-row mb-2'>
+              <span className="text-light label">활동 장소</span>
+              <span className='primary-dark p-ml2'>{data.activityLocation}</span>
+            </div>
+            <div className='info-row mb-2'>
+              <span className="text-light label">모집 기간</span>
+              <span className='primary-dark p-ml2'>{data.recruitmentPeriod}</span>
+            </div>
+            <div className='info-row mb-2'>
+              <span className="text-light label">봉사 기간</span>
+              <span className='primary-dark p-ml2'>{data.volunteerPeriod}</span>
+            </div>
+            <div className="info-row">
+              <span className="text-light label">시설 연락처</span>
+              <span className='primary-dark p-ml3'> {data.facilityContact}</span>
+            </div>
+          </div>
+        </div>
+        
     <div className="detail-wrap">
       <div className="detail-btn">상세</div>
       <div className="detail-content mb-4">

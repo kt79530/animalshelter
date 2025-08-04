@@ -1,20 +1,5 @@
 
-//modal 너비 변경
-/*.postmodal-style{ 
-   max-width: 950px; 
-   width: 90%;
-}*/
 
-//header 와 body 구분선
-/*.organization-info{
- display: flex; 
- flex-wrap: wrap;
- width: 830px; height: auto; 
- margin: 0 auto;
-}*/
-
-
-//.line{width: 95%; border: 0.75px dotted #DADADA; margin: 0 auto;}
 .img-fluid{
   width: 350px;
   height: auto;
@@ -36,11 +21,6 @@
   justify-content: center;
   
 }
-
-
-
-
-
 .detail-btn{
   width: 85px; height: 37px; 
   border-radius: 7px;
@@ -56,7 +36,10 @@
 .author-interaction-section{margin-left: 3vw;}
 
 .report-btn{border-radius: 50px;}
-.warning-notes-wrap{}
+
+.warning-notes-wrap{
+  .warning-notes-box{display: inline-block; justify-content: center;  }
+}
 
 
 

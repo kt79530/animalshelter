@@ -9,9 +9,15 @@
 }
 .warp .cardImg {
   width: 100%;
+  height: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
   box-sizing: border-box;
+}
+.warp .cardImg .imagefit {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .warp .hashtag {
   padding: 5px 10px;

@@ -36,6 +36,6 @@ const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle,pageB
                     </Row>
                 </Container>
         </div>
-    );
+    );  
 };
 export default GalleryLayout;

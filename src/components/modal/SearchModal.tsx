@@ -2,7 +2,7 @@ import React, { useState }from 'react';
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 import ModalLayout from './ModalLayout';
 
-import '../../styles/_search.scss';
+import '../../styles/_searchModal.scss';
 import Comment from '../Comment';
 import { SearchDataType } from '../../data/searchData';
 
@@ -13,7 +13,8 @@ import { SearchDataType } from '../../data/searchData';
 // 페이지네이션 아이콘 (Ionicons v5)
 //import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
 
-
+//icon
+import 'bootstrap-icons/font/bootstrap-icons.css';
 //댓글 이미지 렌더링
 import sns from '../../assets/img/community/sns-profile.png';
 import sns2 from '../../assets/img/commentsection/snsface.png';
@@ -48,7 +49,7 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
     
       {/*<Modal.Header >*/}
       <div className='search-header'>
-        <div className='ms-4 mt-3'>
+        <div className=''>
           <Modal.Title ><h2>{data.title}</h2></Modal.Title>
           <p className='tab mt-2'>{data.date}</p>
         </div>
@@ -58,13 +59,14 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
       <div className='line'></div>
 
       <div className="post-modal-body px-4 pt-4 pb-0">
-        {/* 정보 섹션 */}
-        <div className="info-wrap mb-4">
+      
+      {/* 정보 섹션 */}
+        <div className="info-wrap mb-4 ">
           <div className="main-image-wrapper mb-3">
-            <img src={data.image} alt="실종동물 이미지" className="img-fluid rounded-4" />
+            <img src={data.image} alt="실종동물 이미지" className=" rounded-4 custom-img" />
           </div>
           
-          <div className="info-box">
+          <div className="info-box ms-5">
             <div className="info-title">
               <h4>{data.name}</h4>
               <span className="recruit secondary-bg tab ms-2">종료</span>
@@ -72,16 +74,28 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
             <div className="info-item ">
               <h6>{data.gender} | {data.age} | {data.weight}kg</h6>
             </div>
-            <div className="text-light mt-3 mb-2">품종<span className='primary-dark'> {data.breed}</span></div>
-            <div className="text-light mb-2">분실 장소<span className='primary-dark'> {data.location}</span></div>
-            <div className="text-light mb-2">분실 날짜<span className='primary-dark'> {data.lostPeriod}</span> </div>
-            <div className="text-light mb-2">긴급 연락처<span className='primary-dark'> {data.facilityContact}</span> </div>
+            <div className='info-row mt-4 mb-2 '>
+              <span className="text-light label">품종</span>
+              <span className='primary-dark s-ml1'> {data.breed}</span>
+            </div>
+            <div className='info-row mb-2'>
+              <span className="text-light label">분실 장소</span>
+              <span className='primary-dark s-ml2'> {data.location}</span>
+            </div>
+            <div className='info-row mb-2'>
+              <span className="text-light label">분실 날짜</span>
+              <span className='primary-dark s-ml2'> {data.lostPeriod}</span>
+            </div>
+            <div className="info-row">
+              <span className="text-light label">긴급 연락처</span>
+              <span className='primary-dark s-ml3'> {data.facilityContact}</span>
+            </div>
           </div>
         </div>
 
         {/* 봉사 내용 상세 설명 */}
         <div className='detail-wrap'>
-          <div className='detail-btn'>특이사항</div>
+          <div className='detail-btn '>특이사항</div>
             <div className="detail-content ">
               <p className="content-title ms-1" style={{ whiteSpace: 'pre-line' }}>{data.content}</p>
               <p className="content-text ms-1" style={{ whiteSpace: 'pre-line' }}>{data.specialNotes}</p>
@@ -100,11 +114,11 @@ const Search: React.FC<SearchProps> = ({ show, onClose, data }) => {
           <div className="interaction-icons d-flex align-items-center">
             <div className="icon-group me-4">
               {/*<MdStarOutline size="20" className="me-1" />*/}
-              <span>{data.likes}</span>
+              <span><i className="bi bi-star">{data.likes}</i> </span>
             </div>
             <div className="icon-group me-4">
               {/*<MdChatBubbleOutline size="20" className="me-1" />*/}
-              <span>{data.comments}</span>
+              <span><i className='bi bi-chat'>{data.comments}</i></span>
             </div>
             <div className="icon-group me-4">
               {/*<MdOutlineShare size="20" className="me-1" />*/}

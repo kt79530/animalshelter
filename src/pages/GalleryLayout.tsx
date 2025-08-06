@@ -15,26 +15,28 @@ const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle,pageB
         const bgImg = pageBgImg 
     return (
         <div className={`${styles.wrapper}`}>
-            <div className={styles.header} style={{ backgroundImage: `url(${bgImg})`}} >
+            <div className={styles.header} 
+                 style={{ backgroundImage: `url(${bgImg})`}} >
                 <Container>
                     <Col lg={12}>
                         <div className={styles.headtext}>
                             <h1>{pageTitle}</h1>
                             <h3>{pageSubText}</h3>
                         </div>
-                    </Col>
-                </Container>                       
+                    </Col>                
+                </Container>              
             </div>
-                <Container className={styles.body}>
-                    <Row>
-                        <Col lg={4} md={6} className="searchbar mt-5">
-                            <Search />
-                        </Col>
-                    </Row>
-                    <Row >
-                        {children} {/* 여기가 각 컴포넌트의 고유한 콘텐츠가 렌더링될 공간입니다 */}
-                    </Row>
-                </Container>
+                         
+            <Container className={styles.body}>
+                <Row>
+                    <Col lg={4} md={6} className="searchbar mt-5">
+                        <Search />
+                    </Col>
+                </Row>
+                <Row >
+                    {children} {/* 여기가 각 컴포넌트의 고유한 콘텐츠가 렌더링될 공간입니다 */}
+                </Row>
+            </Container>
         </div>
     );  
 };

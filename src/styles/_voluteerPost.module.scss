@@ -1,0 +1,23 @@
+//.volunteer-wrapper{position: relative;}
+
+    .border{ 
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 57px;
+        height: 30px;
+        border-radius:20px
+    }
+
+    .title-align{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    
+    }
+    @media (min-width:1024px) and (max-width:1440px){
+        .title-align{width:250px;}
+    }
+
+    

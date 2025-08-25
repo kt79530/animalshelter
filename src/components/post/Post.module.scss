@@ -1,0 +1,54 @@
+.wrapper{
+    height:300px;
+    padding:50px 0;
+    gap:70px;
+
+    .content{
+        flex: 1 1 auto;
+        min-width:0;
+        max-width:900px;
+
+        .txt{
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+
+        .title{
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        
+        .titleBadge{border-radius: 10px;}
+        
+        .hashtag{
+            border:1px solid;
+            padding:8px 12px;
+            border-radius:30px;
+        }
+
+
+        .region{
+            padding:8px 12px;
+            border-radius:10px;
+        }
+
+        .icon{
+            width:20px; height:20px;
+            border:1px solid #BDBDBD;
+        }
+    }
+
+
+    figure{
+        img{
+        //background-color:#D9D9D9;
+        width:300px;
+        aspect-ratio:3/2;
+        border-radius:30px;
+        object-fit:cover;
+        text-align:center;}
+    }
+}
+

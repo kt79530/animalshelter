@@ -1,0 +1,62 @@
+/* MainPage.css */
+
+//top section
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #FAF9F6;
+  .hero-left{
+    margin-top: 30vh;
+    margin-left: 220px;
+  }
+}
+
+//stats section
+.stats {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+   
+  //중간 나침반 아이콘 조정
+  .icon-compass{
+     margin-bottom: 21.5vh;
+  }
+  //아이콘과 숫자 사이 간격
+  .icon{margin-bottom: 6.25vh;}
+}
+
+.btn-custom{ 
+    border-radius: 30px; 
+    width:162px;
+    height: 50px;
+    border:1px solid #3A7F78;
+}
+
+/*.volunteer-donation {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}*/
+
+//slide section
+.slide-section-wrapper{
+  position: relative;
+  margin-top: 18.25vh;
+  .slide-nav-btn{
+    button{all: unset; cursor: pointer;}
+  .prev-align{position: absolute; left: 0;}
+  .next-align{position: absolute; right: 0;}
+  }
+}
+
+//volunteer-donation post section
+.post-section-wrapper{
+  position: relative;
+  margin-top:18.25vh;
+  
+}

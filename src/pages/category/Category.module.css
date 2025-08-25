@@ -1,0 +1,19 @@
+.writtenIcon {
+  border: 1px solid red;
+}
+
+.banner {
+  width: 100%;
+  aspect-ratio: 1920/440;
+  background-color: #999;
+}
+
+.ml {
+  margin-left: 220px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .ml {
+    margin-left: 50px;
+  }
+}/*# sourceMappingURL=Category.module.css.map */

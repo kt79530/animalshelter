@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/*.postmodal-style{ 
+   max-width: 950px; 
+   width: 90%;
+}*/
+.img-fluid {
+  width: 350px;
+  height: auto;
+  max-width: 100%;
+}
+
+.info-box {
+  margin-left: 30px;
+}
+
+.info-title {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.recruit {
+  width: 50px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-btn {
+  width: 85px;
+  height: 37px;
+  border-radius: 7px;
+  background-color: #3A7F78;
+  text-align: center;
+  line-height: 37px;
+  color: white;
+  margin-left: 2.5vw;
+}
+
+.detail-wrap {
+  display: flex;
+}
+
+.detail-content {
+  margin-left: 1vw;
+}
+
+.author-interaction-section {
+  margin-left: 3vw;
+}
+
+.report-btn {
+  border-radius: 50px;
+}
+
+/* src/styles/_PostModal.scss */
+/*==========================================
+
+
+구조
+------------------------------------------
+
+.(색상명) :글자색 변경
+.(색상명)-line :글자색+외곽선
+.(색상명)-bg :배경색 변경
+.(색상명)-bg-btn :배경색 변경 + 호버 시 어두워짐(주요 3색 한정)
+.(색상명)-btn :글자색+외곽선 => 배경색 변경
+
+
+.(색상명)-light-OO :상단과 효과 동일 / 단, -bg-btn은 없음
+.(색상명)-dark-OO :상단과 효과 동일 / 단, -bg-btn은 없음
+
+------------------------------------------
+
+
+==========================================*/
+/*==========================================
+클래스 자동 생성
+==========================================*/
+.primary {
+  color: #3A7F78;
+}
+
+.primary-bg {
+  background-color: #3A7F78 !important;
+  color: #fff;
+}
+
+.primary-btn {
+  color: #3A7F78;
+  background-color: transparent;
+  border: 1px solid #3A7F78;
+  transition: all 0.2s ease;
+}
+.primary-btn:hover, .primary-btn:focus, .primary-btn:active {
+  background-color: #3A7F78;
+  color: #fff;
+}
+
+.primary-bg-btn {
+  background-color: #3A7F78;
+  color: #fff;
+  border: 1px solid #3A7F78;
+  transition: all 0.2s ease;
+}
+.primary-bg-btn:hover, .primary-bg-btn:focus, .primary-bg-btn:active {
+  background-color: #285C57 !important;
+}
+
+.primary-line {
+  color: #3A7F78;
+  border-color: #3A7F78;
+}
+
+.primary-light {
+  color: #EAF5F4;
+}
+
+.primary-light-bg {
+  background-color: #EAF5F4 !important;
+  color: #fff;
+}
+
+.primary-light-btn {
+  color: #EAF5F4;
+  background-color: transparent;
+  border: 1px solid #EAF5F4;
+  transition: all 0.2s ease;
+}
+.primary-light-btn:hover, .primary-light-btn:focus, .primary-light-btn:active {
+  background-color: #EAF5F4;
+  color: #fff;
+}
+
+.primary-light-line {
+  color: #EAF5F4;
+  border-color: #EAF5F4;
+}
+
+.primary-dark {
+  color: #285C57;
+}
+
+.primary-dark-bg {
+  background-color: #285C57 !important;
+  color: #fff;
+}
+
+.primary-dark-btn {
+  color: #285C57;
+  background-color: transparent;
+  border: 1px solid #285C57;
+  transition: all 0.2s ease;
+}
+.primary-dark-btn:hover, .primary-dark-btn:focus, .primary-dark-btn:active {
+  background-color: #285C57;
+  color: #fff;
+}
+
+.primary-dark-line {
+  color: #285C57;
+  border-color: #285C57;
+}
+
+.secondary {
+  color: #F8B661;
+}
+
+.secondary-bg {
+  background-color: #F8B661 !important;
+  color: #fff;
+}
+
+.secondary-btn {
+  color: #F8B661;
+  background-color: transparent;
+  border: 1px solid #F8B661;
+  transition: all 0.2s ease;
+}
+.secondary-btn:hover, .secondary-btn:focus, .secondary-btn:active {
+  background-color: #F8B661;
+  color: #fff;
+}
+
+.secondary-bg-btn {
+  background-color: #F8B661;
+  color: #fff;
+  border: 1px solid #F8B661;
+  transition: all 0.2s ease;
+}
+.secondary-bg-btn:hover, .secondary-bg-btn:focus, .secondary-bg-btn:active {
+  background-color: #D2914E !important;
+}
+
+.secondary-line {
+  color: #F8B661;
+  border-color: #F8B661;
+}
+
+.secondary-light {
+  color: #FDE8C7;
+}
+
+.secondary-light-bg {
+  background-color: #FDE8C7 !important;
+  color: #fff;
+}
+
+.secondary-light-btn {
+  color: #FDE8C7;
+  background-color: transparent;
+  border: 1px solid #FDE8C7;
+  transition: all 0.2s ease;
+}
+.secondary-light-btn:hover, .secondary-light-btn:focus, .secondary-light-btn:active {
+  background-color: #FDE8C7;
+  color: #fff;
+}
+
+.secondary-light-line {
+  color: #FDE8C7;
+  border-color: #FDE8C7;
+}
+
+.secondary-dark {
+  color: #D2914E;
+}
+
+.secondary-dark-bg {
+  background-color: #D2914E !important;
+  color: #fff;
+}
+
+.secondary-dark-btn {
+  color: #D2914E;
+  background-color: transparent;
+  border: 1px solid #D2914E;
+  transition: all 0.2s ease;
+}
+.secondary-dark-btn:hover, .secondary-dark-btn:focus, .secondary-dark-btn:active {
+  background-color: #D2914E;
+  color: #fff;
+}
+
+.secondary-dark-line {
+  color: #D2914E;
+  border-color: #D2914E;
+}
+
+.blend {
+  color: #375829;
+}
+
+.blend-bg {
+  background-color: #375829 !important;
+  color: #fff;
+}
+
+.blend-btn {
+  color: #375829;
+  background-color: transparent;
+  border: 1px solid #375829;
+  transition: all 0.2s ease;
+}
+.blend-btn:hover, .blend-btn:focus, .blend-btn:active {
+  background-color: #375829;
+  color: #fff;
+}
+
+.blend-bg-btn {
+  background-color: #375829;
+  color: #fff;
+  border: 1px solid #375829;
+  transition: all 0.2s ease;
+}
+.blend-bg-btn:hover, .blend-bg-btn:focus, .blend-bg-btn:active {
+  background-color: #2B4A30 !important;
+}
+
+.blend-line {
+  color: #375829;
+  border-color: #375829;
+}
+
+.blend-light {
+  color: #B1D6AE;
+}
+
+.blend-light-bg {
+  background-color: #B1D6AE !important;
+  color: #fff;
+}
+
+.blend-light-btn {
+  color: #B1D6AE;
+  background-color: transparent;
+  border: 1px solid #B1D6AE;
+  transition: all 0.2s ease;
+}
+.blend-light-btn:hover, .blend-light-btn:focus, .blend-light-btn:active {
+  background-color: #B1D6AE;
+  color: #fff;
+}
+
+.blend-light-line {
+  color: #B1D6AE;
+  border-color: #B1D6AE;
+}
+
+.blend-dark {
+  color: #2B4A30;
+}
+
+.blend-dark-bg {
+  background-color: #2B4A30 !important;
+  color: #fff;
+}
+
+.blend-dark-btn {
+  color: #2B4A30;
+  background-color: transparent;
+  border: 1px solid #2B4A30;
+  transition: all 0.2s ease;
+}
+.blend-dark-btn:hover, .blend-dark-btn:focus, .blend-dark-btn:active {
+  background-color: #2B4A30;
+  color: #fff;
+}
+
+.blend-dark-line {
+  color: #2B4A30;
+  border-color: #2B4A30;
+}
+
+.danger {
+  color: #d95040;
+}
+
+.danger-bg {
+  background-color: #d95040 !important;
+  color: #fff;
+}
+
+.danger-btn {
+  color: #d95040;
+  background-color: transparent;
+  border: 1px solid #d95040;
+  transition: all 0.2s ease;
+}
+.danger-btn:hover, .danger-btn:focus, .danger-btn:active {
+  background-color: #d95040;
+  color: #fff;
+}
+
+.danger-bg-btn {
+  background-color: #d95040;
+  color: #fff;
+  border: 1px solid #d95040;
+  transition: all 0.2s ease;
+}
+
+.danger-line {
+  color: #d95040;
+  border-color: #d95040;
+}
+
+/*==========================================
+기타 색상 정리
+==========================================*/
+.text {
+  color: #2E3A3A !important;
+}
+
+.text-light {
+  color: #BDBDBD !important;
+}
+
+.text-dark {
+  color: #707070 !important;
+}
+
+.bg-color {
+  background-color: #FAF9F6;
+}
+
+.bg-color-badge {
+  background-color: #FAF9F6 !important;
+  color: #707070;
+}
+
+.divider, .dropdown-divider, hr {
+  border-color: #DADADA !important;
+  opacity: 1;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.petstory-page {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.petstory-page .banner {
+  position: relative;
+  height: 440px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .petstory-page .banner {
+    background-size: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 320px) {
+  .petstory-page .banner {
+    background-size: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+  }
+}
+.petstory-page__overlay {
+  position: absolute;
+  left: 212px;
+  top: 176px;
+  width: 602px;
+  color: #fff;
+}
+.petstory-page__title {
+  white-space: nowrap;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.petstory-page__subtitle {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.8rem;
+  line-height: 1.6;
+  max-width: 100%;
+  padding: 0;
+  color: #707070;
+  font-weight: 500; /* Medium */
+}
+.petstory-page .petstory-list {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .petstory-page__overlay {
+    left: 10%;
+    top: 20%;
+    width: 80%;
+  }
+  .petstory-page__title {
+    font-size: 2.2rem;
+  }
+  .petstory-page__subtitle {
+    font-size: 1rem;
+    white-space: normal;
+  }
+}/*# sourceMappingURL=PetStory.css.map */

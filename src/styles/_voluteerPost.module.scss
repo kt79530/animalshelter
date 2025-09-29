@@ -1,23 +1,45 @@
 //.volunteer-wrapper{position: relative;}
+.listItems{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    .border{ 
+    .borders{ 
         display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 57px;
         height: 30px;
-        border-radius:20px
+        border-radius:20px;
+        flex: 1;
+        text-align: left;
+        flex-shrink: 0; //width 줄어드는 것 방지
+        flex-grow:0.3; //width 늘어나는 것 조절
     }
 
-    .title-align{
+    .titleAlign{
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 400px;
+        flex: 2;
+        text-align: center;
+    }
+
+    .dateAlign{
+        flex: 1;
+        text-align: right;
+    }
+
     
+        @media (min-width:1024px) and (max-width:1440px){
     }
-    @media (min-width:1024px) and (max-width:1440px){
-        .title-align{width:250px;}
+
+        @media (max-width:768px){
+        .donationWrap{ margin-top: 3vh;}
+        .titleAlign{flex: 2; text-align: center;}
+        
+        
     }
+}
 
     

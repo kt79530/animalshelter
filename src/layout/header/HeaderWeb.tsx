@@ -74,8 +74,8 @@ const HeaderWeb: React.FC = () => {
     <>
     <Navbar expand="md" className={styles.header}>
       <Container fluid>
-        <Navbar.Brand href="/" className={styles.logo}>Logo</Navbar.Brand>
-        <Nav className="gap-4">
+        <Navbar.Brand className={styles.logo} as={Link} to={"/"}></Navbar.Brand>
+        <Nav className="gap-4 ms-5">
 
             {(MenusData as MenuGroup[]).map(menuGroup => (
             <Nav.Link
@@ -96,8 +96,8 @@ const HeaderWeb: React.FC = () => {
                 <Link
                     key={menuItem.title}
                     to={menuItem.to}
-                    className={styles.dropItem}
-                    ><IconComp className={styles.iconLeft}/>
+                    className={`nav-small ${styles.dropItem}`}
+                    ><IconComp className={`${styles.iconLeft}`}/>
                     {menuItem.title}
                 </Link>
                 )

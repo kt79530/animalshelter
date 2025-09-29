@@ -47,7 +47,7 @@ const HeaderMobile: React.FC = () => {
     <>
     <Navbar expand="md" className={styles.header}>
       <Container fluid>
-        <Navbar.Brand href="/" className={styles.logo}>Logo</Navbar.Brand>
+        <Navbar.Brand href="/" className={styles.logo} />
         <Navbar.Toggle aria-controls="category"/>
         
         <Navbar.Offcanvas

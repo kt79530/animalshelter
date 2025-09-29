@@ -1,0 +1,9 @@
+ 
+  //아이콘과 숫자 사이 간격
+  .icon{margin-bottom: 6.25vh;}
+
+  @media (max-width: 768px){
+    .icon{
+        margin-top: 3vh;
+        margin-bottom:1vh;}
+  }

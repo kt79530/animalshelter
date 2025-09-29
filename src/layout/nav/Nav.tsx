@@ -19,8 +19,8 @@ const NavBar = () => {
     
     return(
         <>
-        <Nav className={`tab flex-column align-items-center justify-content-end  ${styles.navSide}`}>
-            <div className={`flex-column align-items-center ${styles.navContent}`}>
+        <Nav className={`tab flex-column align-items-center justify-content-center  ${styles.navSide}`}>
+            <div className={`flex-column align-items-center justify-content-center ${styles.navContent}`}>
 
                 <Nav.Link
                     className={`d-flex flex-column align-items-center ${styles.content}`}
@@ -28,7 +28,7 @@ const NavBar = () => {
 
                     <Paw
                     aria-hidden="true"
-                    className={`secondary ${styles.icon}`}
+                    className={`secondary  nav-small ${styles.icon}`}
                     />실종동물 찾는 법
                 </Nav.Link>
 
@@ -37,7 +37,7 @@ const NavBar = () => {
                 <Nav.Link className={`d-flex flex-column align-items-center ${styles.content}`}>
                     <Document
                     aria-hidden="true"
-                    className={`secondary ${styles.icon}`}
+                    className={`secondary nav-small ${styles.icon}`}
                     />분양 시 유의사항
                 </Nav.Link>
 
@@ -45,14 +45,14 @@ const NavBar = () => {
                 <Nav.Link className={`d-flex flex-column align-items-center ${styles.content}`}>
                     <Warning
                     aria-hidden="true"
-                    className={`secondary ${styles.icon}`}
+                    className={`secondary  nav-small ${styles.icon}`}
                     />공지사항
                 </Nav.Link>
 
             </div>
-            <Button className={`secondary-bg ${styles.topBtn}`}>
+            {/*<Button className={`secondary-bg ${styles.topBtn}`}>
                 <ChevronUp className={styles.topIcon}/>
-            </Button>
+            </Button>*/}
         </Nav>
         </>
     )

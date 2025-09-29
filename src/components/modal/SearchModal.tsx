@@ -72,7 +72,7 @@
           </div>
 
 {/* 봉사 내용 상세 설명 */}
-          <div className='detail-wrap ms-1'>
+          <div className='detail-wrap'>
             <div className='detail-btn '>특이사항</div>
               <div className="detail-content ">
                 <p className="content-title ms-1" style={{ whiteSpace: 'pre-line' }}>{data.content}</p>

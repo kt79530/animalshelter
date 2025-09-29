@@ -28,7 +28,7 @@ const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle,pageB
             </div>
                 <Container className={styles.body}>
                     <Row>
-                        <Col lg={4} md={6} className="searchbar mt-5">
+                        <Col lg={4} md={6} sm={9} className="searchbar mt-5">
                             <Search />
                         </Col>
                     </Row>

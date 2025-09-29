@@ -1,28 +1,23 @@
-//@import  url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-
-/**{
-    font-family: 'S-CoreDream-3Light'; 
-    color: #2E3A3A;
-    margin: 0 ;
-    padding: 0 ;
-}*/
 
 //content-box
 .wrapper{
     width: 100%; 
     height: auto;
     background-color: #FAF9F6;
-    
-   
-  
 }
 
 //text-box
-.margin{
+.footer-content{
     //width: 850px;
     height: auto;
     margin-left: 6.67vw;
     margin-top: 6vh;
+    word-wrap: break-word;//오래된 브라우져 호환
+    overflow-wrap:break-word;//최신 브라우저 표준
+    white-space: normal;//여러 개의 공백은 하나로 줄이고, 텍스트가 부모 너비를 초과하면 자동 줄바꿈
+    @media (max-width:768px){
+        margin-left: 5px;
+    }
        
 }
 

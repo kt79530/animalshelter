@@ -1,4 +1,4 @@
-//자원봉사자 레이아웃
+//자원봉사자 모집 페이지 본문 comp
 
 import { useState } from 'react';
 import { Badge } from 'react-bootstrap';
@@ -77,7 +77,7 @@ const Post = () => {
                             
                             </div>
 
-                            <ul className="post-meta d-flex gap-5 align-items-center">
+                            <ul className={`d-flex gap-5 align-items-center ${styles.postMeta}`}>
 
                                 <li className="region tab d-flex gap-2 align-items-center">
                                     <strong className={`blend-bg ${styles.region}`}>{post.activityLocation}</strong>
@@ -90,7 +90,7 @@ const Post = () => {
                                 <time
                                     aria-label="작성일 0000년 00월 00일"
                                     dateTime="0000-00-00"
-                                    className="nav-small text-light"
+                                    className={`nav-small text-light ${styles.datewidth}`}
                                     >{post.date}
                                 </time>
                                 </li>

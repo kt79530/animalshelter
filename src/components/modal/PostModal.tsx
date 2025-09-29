@@ -1,3 +1,4 @@
+//자원봉사자 컴포넌트 모달
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import ModalLayout from './ModalLayout'; // 공통 모달
@@ -75,7 +76,7 @@ const Post: React.FC<PostProps> = ({ show, onClose, data }) => {
           </div>
         </div>
         
-    <div className="detail-wrap ms-1">
+    <div className="detail-wrap ">
       <div className="detail-btn">상세</div>
       <div className="detail-content mb-4">
         <h5 className="content-title">봉사 내용과 관련된 상세 설명이 추가됩니다.</h5>

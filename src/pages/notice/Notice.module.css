@@ -1,21 +1,97 @@
-.header {
-  height: 80px;
-  border-radius: 20px;
+/*.header{
+    height:80px;
+    border-radius:20px;
 }
 
-.content {
-  height: 100px;
+.content{
+    height:100px;
+    .titleBadge{border-radius: 10px;}
+
+    .icon{
+        width:24px; height:24px;
+        border:1px solid #707070;
+    }
+
+    .title{
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}*/
+body, html {
+  margin: 0;
+  padding: 0;
 }
-.content .titleBadge {
-  border-radius: 10px;
+
+.noticePage {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
-.content .icon {
-  width: 24px;
-  height: 24px;
-  border: 1px solid #707070;
-}
-.content .title {
-  white-space: nowrap;
+.noticePage .banner {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  background-size: contain;
+  background-repeat: no-repeat;
   overflow: hidden;
-  text-overflow: ellipsis;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .noticePage .banner {
+    height: 200px;
+    background-size: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 320px) {
+  .noticePage .banner {
+    height: 150px;
+    background-size: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+  }
+}
+.noticePage__overlay {
+  position: absolute;
+  left: 212px;
+  top: 176px;
+  width: 602px;
+  color: #fff;
+}
+.noticePage__title {
+  white-space: nowrap;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.noticePage__subtitle {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 100%;
+  padding: 0;
+  color: #707070;
+  font-weight: 500; /* Medium */
+}
+.noticePage .noticeList {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .noticePage__overlay {
+    left: 10%;
+    top: 20%;
+    width: 80%;
+  }
+  .noticePage__title {
+    font-size: 2.2rem;
+  }
+  .noticePage__subtitle {
+    font-size: 1rem;
+    white-space: normal;
+  }
 }/*# sourceMappingURL=Notice.module.css.map */

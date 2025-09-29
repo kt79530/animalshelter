@@ -6,7 +6,6 @@
     .form{
         height:20px;
         border:none;
-
         &:focus{outline:none; box-shadow:none;}
         &::placeholder{color:#BDBDBD;}
     }
@@ -96,9 +95,18 @@
     }
 }
 
-
-
-
-
 :global(.popover), :global(.popober *){font-family:'S-CoreDream', sans-serif;}
 :global(.popover-arrow){display: none !important;}
+
+@media (min-width:768px) and (max-width:1440px){
+    .form{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:768px){
+    .form{
+        font-size: 11px;
+        text-align: center;
+    }
+}

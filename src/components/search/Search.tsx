@@ -109,7 +109,7 @@ const Search = () => {
             ================================ */}
             <Form.Control
             type="text" value={formA}
-            placeholder="검색어를 입력해 주세요"
+            placeholder="검색어 입력"
             onChange={(e) => setFormA(e.target.value)}
             className={`${styles.form}`}
             />

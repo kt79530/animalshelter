@@ -49,7 +49,7 @@ export const postList: PostDataType[] = [
     ],
   },
   {
-  title: '긴급하게 봉사자분들 모십니다. 도와주세요.',
+  title: '긴급하게 봉사자분들 모십니다.',
   date: '2025-07-19',
   image:volunteer,
   organizationName: '코코브라더스',
@@ -121,7 +121,7 @@ export const postList: PostDataType[] = [
     ],
   },
   {
-  title: '개인 유기견 보호소입니다(중식 제공)',
+  title: '개인 유기견 보호소입니다',
   date: '2025-07-19',
   image:volunteer,
   organizationName: '코코브라더스',

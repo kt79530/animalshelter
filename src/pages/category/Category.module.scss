@@ -2,14 +2,27 @@
 
 .banner{
     width:100%;
+    height: auto;
     aspect-ratio:1920/440;
-    background-color:#999;
-}
+    background-size: cover;
+    background-position: center;
+    background-color:#e2e2e2;
+   }
 
 .ml{
      margin-left: 220px;
 }
+//.border{border: none;}
+.outline {
+    border: none !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@media (min-width:1024px) and (max-width:1440px){
+@media (min-width:769px) and (max-width:1440px){
+    .ml{margin-left:100px}
+}
+@media (max-width:768px){
     .ml{margin-left:50px}
 }

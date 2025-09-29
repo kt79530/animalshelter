@@ -15,8 +15,8 @@ const DonationPost = () => {
         <Container>
             <Row>
                 <Col>
-                    <div className='donation-wrap '>
-                        <h3 className='d-flex justify-content-between mb-3'>기부/후원 요청
+                    <div className = {style.donationWrap}>
+                        <h3 className='d-flex justify-content-between mb-3 '>기부/후원 요청
                             <span className='body-small mt-2'>더 보기</span>
                         </h3>
 
@@ -26,13 +26,12 @@ const DonationPost = () => {
                             {donationList.map((post, index) => (
                                 <li
                                 key={index}
-                                className='d-flex justify-content-between align-items-center mb-2'
-                                >
+                                className={`mb-2 ${style.listItem}`} >
                                     <span className={`caption primary-bg ${style.border}`}>
                                         {post.province}
                                     </span>
-                                    <span className={style.titleAlign}>{post. title}</span>
-                                    <span>{post.date}</span>
+                                    <span className={`ms-2 ${style.titleAlign}`}>{post. title}</span>
+                                    <p className={style.postAlign}>{post.date}</p>
                                 </li>
 
                             ))}

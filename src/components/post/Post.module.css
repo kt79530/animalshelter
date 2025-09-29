@@ -37,9 +37,19 @@
 }
 .wrapper figure img {
   width: 300px;
+  height: auto;
   aspect-ratio: 3/2;
   border-radius: 30px;
   -o-object-fit: cover;
      object-fit: cover;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .wrapper figure img {
+    width: 180px;
+    height: auto;
+  }
+}
+.wrapper .postmeta .datewidth {
+  width: 150px !important;
 }/*# sourceMappingURL=Post.module.css.map */

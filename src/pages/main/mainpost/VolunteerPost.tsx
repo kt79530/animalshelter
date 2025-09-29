@@ -37,9 +37,9 @@ const VolunteerPost = () => {
                                             key={index}
                                             onClick={()=>handleTitleClick(post)}
                                             style={{cursor:'pointer'}}
-                                            className='d-flex mb-2 justify-content-between align-items- center'>
-                                            <p className={`caption primary-bg  ${style.border}`} >{post.province}</p>
-                                            <p className={style['title-align']}>{post.title}</p>
+                                            className={`mb-2 ${style.listItems}`}>
+                                            <span className={`caption primary-bg  ${style.borders}`} >{post.province}</span>
+                                            <span className={`ms-2 ${style.titleAlign}`}>{post.title}</span>
                                             <p className={style.dateAlign}>{post.date}</p>
                                         </li>
                                     ))}

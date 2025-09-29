@@ -9,10 +9,10 @@ import Footer from './layout/Footer';
 import Nav from './layout/nav/Nav';
 import Gallery from './pages/Gallery';
 import ReHome from './pages/ReHome';  
-import Notice from './pages/notice/Notice';
 import Category from './pages/category/Category';
 import Post from './components/post/Post';
-import ModalTestComp from './components/modal/ModalTestComp';
+import Notice from './pages/notice/Notice';
+import PetStory from './pages/petstory/PetStory';
 
 function App() {
   const [showPost, setShowPost] = useState(true);
@@ -27,11 +27,10 @@ function App() {
               <Route path='/' element={<Main />} />
               <Route path="/pages/Gallery" element={<Gallery />} />
               <Route path="/pages/ReHome" element={<ReHome />} />
-              <Route path="/components/modal/ModalTestComp" element={<ModalTestComp />} />
               <Route path='/components/post/Post' element={<Post />} />
               <Route path='/pages/category/Category' element={<Category/>} />
-              <Route path='/pages/notice/Notice' element={<Notice/>} />
-              
+              <Route path='/notice' element={<Notice/>} />
+              <Route path="/petstory" element={<PetStory />} />
             </Routes>       
           </main>
           <Footer/>

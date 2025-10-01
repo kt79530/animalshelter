@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './layout/header/Header';
-import Main from './pages/main/Main';
 import Footer from './layout/Footer';
 import Nav from './layout/nav/Nav';
 import Gallery from './pages/Gallery';
@@ -12,9 +11,11 @@ import Category from './pages/category/Category';
 import Post from './components/post/Post';
 import Notice from './pages/notice/Notice';
 import PetStory from './pages/petstory/PetStory';
+import MainPage from './pages/main/Main';
 
 function App() {
   const [showPost, setShowPost] = useState(true);
+  const Main = MainPage
   return (
     
     <HashRouter>

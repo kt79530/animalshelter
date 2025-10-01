@@ -24,7 +24,7 @@ const Slide: React.FC<SlideProps> = ({
     <section className="animal-gallery">
       <div className="search-text-box mb-5">
         <h1>
-          {title} <img src="/img/main/paw.png" className="ps-3 paw-img" alt="paw" />
+          {title} <img src={` ${process.env.PUBLIC_URL}/img/main/paw.png`} className="ps-3 paw-img" alt="paw" />
         </h1>
         <div>
           <button className="btn-custom primary btn-size" onClick={onRegisterClick}>

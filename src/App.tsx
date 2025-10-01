@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row } from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './layout/header/Header';
 import Main from './pages/main/Main';
@@ -17,8 +16,8 @@ import PetStory from './pages/petstory/PetStory';
 function App() {
   const [showPost, setShowPost] = useState(true);
   return (
-    <>
-    <Router>
+    
+    <HashRouter>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Header/>
         <Nav />
@@ -35,8 +34,8 @@ function App() {
           </main>
           <Footer/>
       </div>
-    </Router>
-    </>
+    </HashRouter>
+    
     
   );
 }

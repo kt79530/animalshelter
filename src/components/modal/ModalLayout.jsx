@@ -14,7 +14,7 @@ interface ModalLayoutProps {
   children: React.ReactNode;
 }
 
-const ModalLayout: React.FC<ModalLayoutProps> = ({ show, onClose, title, date, children, footer }) => {
+function ModalLayout ({ show, onClose, title, date, children, footer }:ModalLayoutProps) {
   return (
 
     <Modal show={show} onHide={onClose} centered scrollable dialogClassName="modal-style">

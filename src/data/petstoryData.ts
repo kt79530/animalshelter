@@ -24,7 +24,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '김태희',
     date: '2025-08-13',
     commentCount: 3,
-    imageUrl: '/img/petstory/cat_01.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_01.png`
   },
     {
     id: 2,
@@ -36,7 +36,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '김성애',
     date: '2025-08-13',
     commentCount: 5,
-    imageUrl: '/img/petstory/dog_01.jpg'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/dog_01.jpg`
   },
     {
     id: 3,
@@ -48,7 +48,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '오유진',
     date: '2025-08-13',
     commentCount: 7,
-    imageUrl: '/img/petstory/cat_02.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_02.png`
   },
     {
     id: 4,
@@ -60,7 +60,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '김재욱',
     date: '2025-08-13',
     commentCount: 4,
-    imageUrl: '/img/petstory/dog_02.jpg'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/dog_02.jpg`
   },
     {
     id: 5,
@@ -72,7 +72,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '남성진',
     date: '2025-08-13',
     commentCount: 10,
-    imageUrl: '/img/petstory/cat_03.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_03.png`
   },
     {
     id: 6,
@@ -84,7 +84,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: 'Chernenok anna',
     date: '2025-08-13',
     commentCount: 7,
-    imageUrl: '/img/petstory/dog_03.jpg'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/dog_03.jpg`
   },
    {
     id: 7,
@@ -96,7 +96,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '김태희',
     date: '2025-08-13',
     commentCount: 3,
-    imageUrl: '/img/petstory/cat_01.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_01.png`
   },
     {
     id: 8,
@@ -108,7 +108,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '김성애',
     date: '2025-08-13',
     commentCount: 5,
-    imageUrl: '/img/petstory/dog_01.jpg'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/dog_01.jpg`
   },
     {
     id: 9,
@@ -120,7 +120,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '오유진',
     date: '2025-08-13',
     commentCount: 7,
-    imageUrl: '/img/petstory/cat_02.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_02.png`
   },
     {
     id: 10,
@@ -132,7 +132,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '김재욱',
     date: '2025-08-13',
     commentCount: 4,
-    imageUrl: '/img/petstory/dog_02.jpg'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/dog_02.jpg`
   },
     {
     id: 11,
@@ -144,7 +144,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '남성진',
     date: '2025-08-13',
     commentCount: 10,
-    imageUrl: '/img/petstory/cat_03.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_03.png`
   },
     {
     id: 12,
@@ -156,7 +156,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: 'Chernenok anna',
     date: '2025-08-13',
     commentCount: 7,
-    imageUrl: '/img/petstory/dog_03.jpg'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/dog_03.jpg`
   },
     {
     id: 13,
@@ -168,7 +168,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '오유진',
     date: '2025-08-13',
     commentCount: 7,
-    imageUrl: '/img/petstory/cat_02.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_02.png`
   },
     {
     id: 14,
@@ -180,7 +180,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '김재욱',
     date: '2025-08-13',
     commentCount: 4,
-    imageUrl: '/img/petstory/dog_02.jpg'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/dog_02.jpg`
   },
     {
     id: 15,
@@ -192,7 +192,7 @@ export const petstoryPosts: PetstoryPost[] = [
     author: '남성진',
     date: '2025-08-13',
     commentCount: 10,
-    imageUrl: '/img/petstory/cat_03.png'
+    imageUrl: `${process.env.PUBLIC_URL}/img/petstory/cat_03.png`
   },
   // ... 필요한 만큼 추가
 ];

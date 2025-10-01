@@ -54,30 +54,30 @@ const PostPetstory: React.FC = () => {
 
   return (
     <section>
-<div className={styles.controls}>
+      <div className={styles.controls}>
   {/* 왼쪽: 작성하기 버튼 */}
-  <div className={styles.leftControls}>
-<button className={styles.writeButton}>
-  <span className={styles.writeText}>작성하기</span>
-  <PenIcon className={styles.writeIcon} />
-</button>
+        <div className={styles.leftControls}>
+      <button className={styles.writeButton}>
+        <span className={styles.writeText}>작성하기</span>
+        <PenIcon className={styles.writeIcon} />
+      </button>
 
-  </div>
+        </div>
 
   {/* 오른쪽: 검색창 */}
-  <div className={styles.searchBar}>
-    <input
-      type="text"
-      placeholder="검색어를 입력해 주세요"
-      value={searchTerm}
-      onChange={(e) => setSearchTerm(e.target.value)}
-      className={styles.searchInput}
-    />
-    <button className={styles.searchButton}>
-      <SearchIcon />
-    </button>
-  </div>
-</div>
+        <div className={styles.searchBar}>
+          <input
+            type="text"
+            placeholder="검색어를 입력해 주세요"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className={styles.searchInput}
+          />
+          <button className={styles.searchButton}>
+            <SearchIcon />
+          </button>
+        </div>
+      </div>
 
 
       {/* 📋 게시물 리스트 */}

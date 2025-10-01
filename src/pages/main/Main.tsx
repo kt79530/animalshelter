@@ -42,7 +42,7 @@ const MainPage = () => {
         <section className="hero">
           <div className="hero-left ">
             <img 
-              src='/img/main/icon.png' 
+              src={`${process.env.PUBLIC_URL}/img/main/icon.png`} 
               alt='mainIcon'
               className='hero-left-img' />
             <h1>실종과 보호 정보를<br />간편하게 확인하세요.</h1>
@@ -53,7 +53,7 @@ const MainPage = () => {
           </div>
           <div className="hero-right">
             <img 
-              src="/img/main/maintopbg.png" 
+              src={`${process.env.PUBLIC_URL}/img/main/maintopbg.png`} 
               alt="Dog"
               className='hero-right-img' />
           </div>

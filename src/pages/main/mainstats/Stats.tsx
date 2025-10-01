@@ -5,7 +5,7 @@ import '../mainstats/_Stats.scss';
 const Stats = () => {
     return(
         <>
-        <Container>
+        <Container className="stats-wrapper">
             <Row>
                 <Col lg={4} md={4} sm={4}>
                     <div className="stat-box">

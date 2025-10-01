@@ -63,9 +63,12 @@ const MainPage = () => {
     </Container>
 
 {/* Stats Section */}
-      <section className='stats-section'>
+    <Container>
+      <Col className='stats-section'>
         <Stats />
-      </section>    
+      </Col>
+    </Container>
+      
         
 {/* slide section */}
       <Container className='slide-section-wrapper'>

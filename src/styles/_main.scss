@@ -23,14 +23,18 @@
 //stats section
 .stats-section {
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   display: flex;
   justify-content:space-around;
   align-items: center;
   padding: 30px;
   text-align: center;
-  margin-top: 10vh;
-   
+  
+    @media (max-width:768px){
+      display: inline;
+      justify-content: center;
+      margin-top: 20px;
+    }
   }
 
 .btn-custom{ 
@@ -49,11 +53,14 @@
 //slide section
 .slide-section-wrapper{
   position: relative;
-  margin-top: 18.25vh;
+  
   .slide-nav-btn{
     display: flex;
     justify-content: space-between;
     button{all: unset; cursor: pointer;}
+  }
+  @media (max-width:768px){
+    margin-top: 50px;
   }
 }
 
@@ -82,17 +89,8 @@
     h1{font-size: 2.25rem;}
   
   }
-  .stats-section{
-    height: 30vh;
-  }
   
-}
-
-@media (min-width:768px) and (max-width:999.98px){
-  .stats-section{
-    height: 20vh;
-    margin-top: 10vh;
-  }
+  
 }
 
 @media (min-width:576px) and (max-width:767.98px){
@@ -111,24 +109,19 @@
   }
   .hero-right{
     width: 100%;
-    height: 300px;
+    height: auto;
     order: -1;// .hero-right영역을 hero-left영역 위로 이동
     }
   .hero-right-img{
     width:100%;
-    max-width: 200px;
+    max-width: 400px;
     height: auto;
     }
   }
 
-  .stats-section{
-   margin-top: 10vh;
-   height: 20vh;
-  }
+  
 }
-.post-section-wrapper{
-  margin-top: 10vh;
-}
+
 
 @media (max-width:575.98px){
 
@@ -156,10 +149,7 @@
     height: auto;
     }
   }
-  .stats-section{
-   margin-top: 10vh;
-   height: 50vh;
-  }
+  
 }
 
  

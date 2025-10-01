@@ -9,24 +9,26 @@ const Notice: React.FC = () => (
     <section
       className={styles.banner}
       style={{ backgroundImage: `url(${noticeBg})` }}
-    >
-      <div className={styles.noticePage__overlay}>
-        <Container>
-          <Row style={{ height: '100%' }}>
-            <Col lg={12} md={4} sm={6} className="">
-              <h1 className={`mb-2 ${styles.noticePage__title}`}>공지사항</h1>
-              <p className={styles.noticePage__subtitle}>
+    >   
+      <Container>
+        <Col lg={12} md={12} sm={12} className="">
+          <h1 className={`mb-2 ${styles.noticePage__title}`}>공지사항</h1>
+          <h4 className={styles.noticePage__subtitle}>
                 종합유기견보호센터의 새로운 소식을 알려드립니다!
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+          </h4>
+        </Col>
+      </Container>
     </section>
-    
-          <section className={styles.noticeList}>
+    <Container>
+      <Row>
+        <Col lg={12} md={12} sm={12}>
+        
+          
             <NoticeBoard />
-          </section>
+          
+       </Col>
+      </Row>
+    </Container>
        
   </div>
 );

@@ -2,7 +2,10 @@ import {useState, useEffect, useRef} from 'react';
 import {Container, Nav, Navbar, Offcanvas, NavDropdown} from 'react-bootstrap';
 import MenusData from "../../data/menu.json";
 import styles from './Header.module.css';
+//menuItem 페이지 경로
+import { Link } from 'react-router-dom';
 
+//icon-styles
 import { LuLock, LuUser, LuPenLine } from "react-icons/lu";
 import { IoPawOutline, IoHeartOutline, IoChatbubbleOutline } from "react-icons/io5";
 import { PiCompassFill, PiHandHeart, PiWarning } from "react-icons/pi";
@@ -77,10 +80,12 @@ const HeaderMobile: React.FC = () => {
                       
                       return(
                         <NavDropdown.Item
+                          as={Link}
+                          to={menuItem.to}
                           key={menuItem.title}
-                          href={menuItem.to}
                           className={styles.dropItem}
-                          ><Icon className={styles.iconLeft}/>
+                          >
+                            <Icon className={styles.iconLeft}/>
                           {menuItem.title}
                         </NavDropdown.Item>
                       )

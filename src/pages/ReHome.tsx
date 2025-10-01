@@ -1,7 +1,7 @@
 //유기동물 분양해요 컴포넌트
 
 import React, {useState, useMemo} from "react";
-import { Col } from "react-bootstrap";
+import { Container,Row,Col } from "react-bootstrap";
 
 //공용 디자인 레이아웃
 import GalleryLayout from "./GalleryLayout";
@@ -65,9 +65,10 @@ const SearchPost: React.FC = () => {
         <>    
         <GalleryLayout
         pageTitle="유기동물을 분양해요"
-        pageSubText={`분양자가 책임비 5만원을 초과하는 금전 거래를 요구한다면,\n해당 게시글을 반드시 신고해 주세요.`}
+        pageSubText={`분양자가 책임비 5만원을 초과하는 금전 거래를 요구한다면, \n해당 게시글을 반드시 신고해 주세요.`}
         pageBgImg={bgImg}
         >
+         
             {reHomeList.map(item => (
                 <Col key={item.name} lg={3} md={4} sm={6} className="mb-4">
                     <div onClick={() => handleCardClick(item)} style={{ cursor: 'pointer' }}>
@@ -81,7 +82,9 @@ const SearchPost: React.FC = () => {
                         />
                     </div>
                 </Col>
+              
             ))}
+            
             {/* 모달 컴포넌트 렌더링 */}
                 {isModalOpen && selectedItem && (
                     <ReHomeModal

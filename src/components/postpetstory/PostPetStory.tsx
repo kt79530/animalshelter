@@ -53,15 +53,14 @@ const PostPetstory: React.FC = () => {
   const totalPages = Math.ceil(filteredPosts.length / itemsPerPage);
 
   return (
-    <section>
+    <section >
       <div className={styles.controls}>
   {/* 왼쪽: 작성하기 버튼 */}
         <div className={styles.leftControls}>
-      <button className={styles.writeButton}>
-        <span className={styles.writeText}>작성하기</span>
-        <PenIcon className={styles.writeIcon} />
-      </button>
-
+          <button className={styles.writeButton}>
+            <span className={styles.writeText}>작성하기</span>
+            <PenIcon className={styles.writeIcon} />
+          </button>
         </div>
 
   {/* 오른쪽: 검색창 */}

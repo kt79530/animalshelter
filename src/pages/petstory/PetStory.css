@@ -405,70 +405,12 @@ body, html {
   padding-top: 0 !important;
 }
 .petstory-page .banner {
-  position: relative;
-  height: 440px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920/440;
   background-size: cover;
-}
-@media (min-width: 768px) {
-  .petstory-page .banner {
-    background-size: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    background-repeat: no-repeat;
-  }
-}
-@media (min-width: 320px) {
-  .petstory-page .banner {
-    background-size: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    background-repeat: no-repeat;
-  }
-}
-.petstory-page__overlay {
-  position: absolute;
-  left: 212px;
-  top: 176px;
-  width: 602px;
-  color: #fff;
-}
-.petstory-page__title {
-  white-space: nowrap;
-  font-size: 3rem;
-  margin: 0;
-  padding: 0;
-}
-.petstory-page__subtitle {
-  white-space: nowrap;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-top: 0.8rem;
-  line-height: 1.6;
-  max-width: 100%;
-  padding: 0;
-  color: #707070;
-  font-weight: 500; /* Medium */
-}
-.petstory-page .petstory-list {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-@media (max-width: 1200px) {
-  .petstory-page__overlay {
-    left: 10%;
-    top: 20%;
-    width: 80%;
-  }
-  .petstory-page__title {
-    font-size: 2.2rem;
-  }
-  .petstory-page__subtitle {
-    font-size: 1rem;
-    white-space: normal;
-  }
+  background-position: center;
 }/*# sourceMappingURL=PetStory.css.map */

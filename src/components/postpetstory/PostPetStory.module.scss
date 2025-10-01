@@ -34,7 +34,7 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      margin-top: -18px; // 본문과 해시태그 사이 간격
+      margin-top: 0px; // 본문과 해시태그 사이 간격
     }
 
     .hashtag {
@@ -47,6 +47,9 @@
     // 작성자와 작성일
     .postMeta {
       margin-top: 60px;
+      @media (max-width:768px){
+        margin-top: 10px;
+      }
     }
 
     .commentInfo {
@@ -157,11 +160,15 @@
   width: 424px;
   height: 50px;
   display: flex;
+  justify-content: end;
   align-items: center;
   background: #fff;
   border: 1px solid #D2914E;
   border-radius: 999px;
   padding: 10px 5px;
+  @media (max-width:768px){
+    width: 250px;
+  }
 }
 
 /* 검색창 입력 필드 */
@@ -190,7 +197,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
 }
 
 /* 검색창 */
@@ -199,12 +206,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
+  
 }
 
 /* 작성하기 버튼을 감싸는 영역 */
-.leftControls {
-  padding-left: 31px;
-}
 
 /* 작성하기 버튼 스타일 */
 .writeButton {
@@ -232,5 +237,11 @@
 
   path {
     stroke: #D2914E;
+  }
+}
+
+hr{
+  @media (max-width:768px){
+    margin-top: -30px;
   }
 }

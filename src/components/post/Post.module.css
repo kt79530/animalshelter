@@ -52,4 +52,10 @@
 }
 .wrapper .postmeta .datewidth {
   width: 150px !important;
+}
+
+@media (max-width: 768px) {
+  hr {
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=Post.module.css.map */

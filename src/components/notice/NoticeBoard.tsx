@@ -49,7 +49,7 @@ const NoticeBoard: React.FC = () => {
   return (
     <>
       {/* 컨트롤 영역 */}
-      <div className={styles.controls}>
+      <div className={`mt-5 ${styles.controls}`}>
         <span className={styles.newsCount}>
           <PawIcon className={styles.pawCountIcon} />
           <span className={styles.textWrapper}>

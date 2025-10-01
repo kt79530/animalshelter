@@ -21,7 +21,7 @@ const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle,pageB
                     <Col lg={12}>
                         <div className={styles.headtext}>
                             <h1>{pageTitle}</h1>
-                            <h3>{pageSubText}</h3>
+                            <h4>{pageSubText}</h4>
                         </div>
                     </Col>
                 </Container>                       
@@ -33,7 +33,9 @@ const GalleryLayout: React.FC <GalleryLayoutProps> = ({children, pageTitle,pageB
                         </Col>
                     </Row>
                     <Row >
+                       
                         {children} {/* 여기가 각 컴포넌트의 고유한 콘텐츠가 렌더링될 공간입니다 */}
+                        
                     </Row>
                 </Container>
         </div>

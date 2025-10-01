@@ -1,7 +1,13 @@
 .writtenIcon {
   border: 1px solid red;
+  animation: blinkBorder 1.5s step-start infinite;
 }
 
+@keyframes blinkBorder {
+  50% {
+    border-color: transparent;
+  }
+}
 .banner {
   width: 100%;
   height: auto;
@@ -11,10 +17,6 @@
   background-color: #e2e2e2;
 }
 
-.ml {
-  margin-left: 220px;
-}
-
 .outline {
   border: none !important;
   display: flex;
@@ -22,13 +24,8 @@
   align-items: center;
 }
 
-@media (min-width: 769px) and (max-width: 1440px) {
-  .ml {
-    margin-left: 100px;
-  }
-}
 @media (max-width: 768px) {
-  .ml {
-    margin-left: 50px;
+  .bottonSmAlign {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=Category.module.css.map */
